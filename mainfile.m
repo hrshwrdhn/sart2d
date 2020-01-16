@@ -1,5 +1,5 @@
-tic
-addpath('./functions');
+%tic
+%addpath('./functions');
 %input
 n=128;
 no_angle= 100;
@@ -23,6 +23,6 @@ pi= zeros(1,no_angle*no_t);
            [ai] =bilinear_int_fun(pointx,pointy,n,X_grid,Y_grid,flag);
         pi(i)= sum( SV.*ai);
     end
-toc
+%toc
 save pi.mat pi
  
